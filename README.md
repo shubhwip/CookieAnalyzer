@@ -1,36 +1,36 @@
-#Cookie Analyzer
+# Cookie Analyzer
 Cookie analyzer parse cookies data given in csv file and gives back required output as per customer's input filters.
 
-##Technologies Used
+## Technologies Used
 * Java
 * Maven
 * Logback Core
 * Shell Scripting
 * Docker
 
-##Prerequisites
+## Prerequisites
 * Java8
 * Maven3.6
 * Bash Shell
 * Linux
 
-##Run
+## Run
 
-#####Go Inside the Project
+##### Go Inside the Project
 ```cd CookieAnalyzer```
-#####Build the Project
+##### Build the Project
 ```mvn clean compile assembly:single```
-#####Run the Solution
+##### Run the Solution
 ```bash cookie-analyzer.sh -f src/main/resources/data.csv -d 2018-12-09```
 
-###Docker way
-#####Go Inside the Project
+### Docker way
+##### Go Inside the Project
 ```cd CookieAnalyzer```
-#####Build a Image
+##### Build a Image
 ```docker image build -t ca . ```
-#####Run a docker container
+##### Run a docker container
 ```docker container run -it ca:latest /bin/bash -c cd /root/CookieAnalyzer; bash cookie-analyzer.sh -f src/main/resources/data.csv -d 2018-12-09```
-##FootNotes
+## FootNotes
 * Logs will be created in Project directory with the name as cookie-analyzer.log
 ###### My System Configuration
 * Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
